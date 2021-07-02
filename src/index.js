@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import RatingsMap from './RatingsMap'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <RatingsMap />,
+    document.getElementById('root')
+);
 registerServiceWorker();
