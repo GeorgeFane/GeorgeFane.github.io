@@ -1,12 +1,14 @@
 import React from "react";
 import axios from "axios";
 
-import { TextField, Box, Grid, ThemeProvider, CssBaseline, Typography } from '@material-ui/core';
+import { TextField, Box, Grid, ThemeProvider, CssBaseline, Typography, InputBase } from '@material-ui/core';
 import { DataGrid } from '@material-ui/data-grid';
 import { withStyles, createMuiTheme } from '@material-ui/core/styles';
 
-var colors = 'darkGreen green goldenRod darkGoldenRod indianRed fireBrick'.split(' ');
+import SearchAppBar from './SearchAppBar';
+import ScrollTabs from './ScrollTabs';
 
+var colors = 'darkGreen green goldenRod darkGoldenRod indianRed fireBrick'.split(' ');
 const useStyles = theme => {
     var root = { padding: theme.spacing(3) };
     colors.forEach(color => {
@@ -78,32 +80,23 @@ class CommentForm extends React.Component {
             show: {},
             seasons: [],
         }
+
+        this.onChange = this.onChange.bind(this);
     }
 
     // components
-    Form() {
-        return (
-            <form className="comment-form" onSubmit={this.handleSubmit.bind(this)}>
-                <TextField 
-                    label="Movie or TV Show"
-                    required
-                    inputRef={(textarea) => this.body = textarea}
-                />
-            </form>
-        );
-    }
 
     ImageGridList() {
         if (!this.state.rows.length) {
             return <div>No Shows</div>
         }
         return (
-            <Grid container spacing={1}>
+            <Grid container justify='center' spacing={2}>
                 {this.state.rows
                     .filter(tile => tile.Poster !== 'N/A')
                     .map((tile) => (
                         <Grid item onClick={() => this.handleSelect(tile.imdbID)}>
-                            <img src={tile.Poster} alt={tile.Title} width={99} />
+                            <img src={tile.Poster} alt={tile.Title} width={144} />
                         </Grid>
                     )
                 )}
@@ -117,76 +110,6 @@ class CommentForm extends React.Component {
                     <img src={tile.Poster} alt={tile.Title} width={99} />
                 </Box>
             ));
-    }
-    
-    DataGridDemo() {
-        var rows = this.state.rows;
-        if (!rows.length){
-            return (
-                <div>
-                    No Rows
-                </div>
-            );
-        }
-    
-        var columns = 'id Title Year'.split(' ').map(key => (
-            {
-                field: key,
-                width: 200,
-            }
-        ));
-        
-        rows.forEach((row, index) => row['id'] = index);
-    
-        const data = {
-            rows: rows,
-            columns: columns,
-            pageSize: 5,
-        };
-        
-        return (
-            <div style={{ height: 400, width: '100%' }}>
-                <DataGrid 
-                    rows={rows}
-                    columns={columns}
-                    pageSize={5}
-                    onRowSelected={this.handleSelect.bind(this)}
-                />
-            </div>
-        );
-    }
-    
-    PairGrid() {
-        var columns = 'id key value'.split(' ').map(field => (
-            {
-                field: field
-            }
-        ))
-    
-        var fields = 'Title Year Rated Released Runtime Genre Director Writer Actors Plot Awards'
-        
-        var entries = Object.entries(this.state.show);
-        if (!entries.length){
-            return <div></div>;
-        }
-    
-        entries.splice(14, 1);
-        var rows = entries.map( ( [key, value], id) => (
-            {
-                id: id,
-                key: key,
-                value: value,
-            }
-        ));
-    
-        return (
-            <div style={{ height: 400, width: 300 }}>
-                <DataGrid 
-                    rows={rows}
-                    columns={columns}
-                />
-            </div>
-        );
     }
     
     process() {
@@ -210,7 +133,6 @@ class CommentForm extends React.Component {
             );
         })
         
-        var width = 77;
         var max = Math.max( ...numbers );
         var columns = [{ 
             field: 'id',
@@ -240,9 +162,8 @@ class CommentForm extends React.Component {
         const { classes } = this.props;
         return (
             <Box className={classes.root}>
-                <Typography variant='h4'>
-                    {this.state.show.Title}
-                </Typography>
+                <ScrollTabs show={this.state.show} />
+
                 <DataGrid 
                     {...data}
                     autoHeight
@@ -267,7 +188,9 @@ class CommentForm extends React.Component {
             <ThemeProvider theme={createMuiTheme(dark)}>
                 <CssBaseline />
                 <div>
-                    {this.Form()}
+                    <SearchAppBar
+                        onChange={this.onChange}
+                    />
                     {this.ImageGridList()}
                     {this.RatingsMap()}
                 </div>
@@ -276,9 +199,11 @@ class CommentForm extends React.Component {
     }
     
     // hooks
-    handleSubmit(event) { 
+
+    onChange(event) { 
         event.preventDefault();     // prevents page from reloading on submit
-        search(this.body.value)
+        console.log(event.target.value);
+        search(event.target.value)
             .then(x => {
                 this.setState({ rows: x });
             });
