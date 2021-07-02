@@ -1,11 +1,11 @@
 import React from "react";
 import axios from "axios";
 
-import { TextField, Box, Grid, ThemeProvider, CssBaseline } from '@material-ui/core';
+import { TextField, Box, Grid, ThemeProvider, CssBaseline, Typography } from '@material-ui/core';
 import { DataGrid } from '@material-ui/data-grid';
 import { withStyles, createMuiTheme } from '@material-ui/core/styles';
 
-var colors = 'darkGreen green goldenRod darkGoldenRod indianRed darkRed'.split(' ');
+var colors = 'darkGreen green goldenRod darkGoldenRod indianRed fireBrick'.split(' ');
 
 const useStyles = theme => {
     var root = { padding: theme.spacing(3) };
@@ -199,7 +199,8 @@ class CommentForm extends React.Component {
         var numbers = [];
         seasons.forEach(season => {
             var row = {};
-            season.Episodes.forEach(episode => {
+            const episodes = season.Episodes || [];
+            episodes.forEach(episode => {
                 row[episode.Episode] = episode.imdbRating
             });
             rows.push(row);
@@ -239,6 +240,9 @@ class CommentForm extends React.Component {
         const { classes } = this.props;
         return (
             <Box className={classes.root}>
+                <Typography variant='h4'>
+                    {this.state.show.Title}
+                </Typography>
                 <DataGrid 
                     {...data}
                     autoHeight
