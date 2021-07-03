@@ -7,6 +7,7 @@ import { withStyles, createMuiTheme } from '@material-ui/core/styles';
 
 import SearchAppBar from './SearchAppBar';
 import ScrollTabs from './ScrollTabs';
+import TestTabs from './TestTabs';
 
 var colors = 'darkGreen green goldenRod darkGoldenRod indianRed fireBrick'.split(' ');
 const useStyles = theme => {
@@ -16,12 +17,6 @@ const useStyles = theme => {
     })
     console.log(root)
     return { root: root };
-};
-
-export const dark = {
-    palette: {
-        type: "dark"
-    }
 };
 
 // api functions
@@ -86,22 +81,34 @@ class CommentForm extends React.Component {
 
     // components
 
-    ImageGridList() {
-        if (!this.state.rows.length) {
-            return <div>No Shows</div>
-        }
+    Form() {
         return (
-            <Grid container justify='center' spacing={2}>
-                {this.state.rows
-                    .filter(tile => tile.Poster !== 'N/A')
-                    .map((tile) => (
-                        <Grid item onClick={() => this.handleSelect(tile.imdbID)}>
-                            <img src={tile.Poster} alt={tile.Title} width={144} />
-                        </Grid>
-                    )
-                )}
-            </Grid>
+            <form onSubmit={this.handleSubmit.bind(this)}>
+                <TextField 
+                    label="RatingsMap"
+                    variant='filled'
+                    required
+                    inputRef={(textarea) => this.body = textarea}
+                />
+            </form>
         );
+    }
+
+    ImageGridList() {
+        if (this.state.rows.length) {
+            return (
+                <Grid container justify='left' spacing={2}>
+                    {this.state.rows
+                        .filter(tile => tile.Poster !== 'N/A')
+                        .map((tile) => (
+                            <Grid item onClick={() => this.handleSelect(tile.imdbID)}>
+                                <img src={tile.Poster} alt={tile.Title} width={144} />
+                            </Grid>
+                        )
+                    )}
+                </Grid>
+            );
+        }
         
         <Box component="div" display="inline">inline</Box>
         return this.state.rows
@@ -162,8 +169,6 @@ class CommentForm extends React.Component {
         const { classes } = this.props;
         return (
             <Box className={classes.root}>
-                <ScrollTabs show={this.state.show} />
-
                 <DataGrid 
                     {...data}
                     autoHeight
@@ -185,20 +190,27 @@ class CommentForm extends React.Component {
 
     render() {
         return (
-            <ThemeProvider theme={createMuiTheme(dark)}>
-                <CssBaseline />
-                <div>
-                    <SearchAppBar
-                        onChange={this.onChange}
-                    />
-                    {this.ImageGridList()}
-                    {this.RatingsMap()}
-                </div>
-            </ThemeProvider>
+            <div>
+                {this.Form()}
+                <br />
+
+                {this.ImageGridList()}
+                <br />
+
+                {this.RatingsMap()}
+            </div>
         );
     }
     
     // hooks
+
+    handleSubmit(event) { 
+        event.preventDefault();     // prevents page from reloading on submit
+        search(this.body.value)
+            .then(x => {
+                this.setState({ rows: x });
+            });
+    }
 
     onChange(event) { 
         event.preventDefault();     // prevents page from reloading on submit
