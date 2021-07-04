@@ -2,11 +2,16 @@ import React from 'react';
 import clsx from 'clsx';
 import { createMuiTheme, makeStyles, useTheme, withStyles } from '@material-ui/core/styles';
 import { Drawer, AppBar, Toolbar, List, CssBaseline, Typography, Divider, IconButton, ListItem, ListItemIcon, ListItemText, Paper, ThemeProvider } from '@material-ui/core';
-import { Menu, ChevronLeft, Brightness3, Brightness7, Create, DiscFull, Backup, Storage, PriorityHigh, LiveTv } from '@material-ui/icons';
+import { Menu, ChevronLeft, Brightness3, Brightness7, Create, DiscFull, Backup, Storage, PriorityHigh, LiveTv, MusicNote } from '@material-ui/icons';
 import { DataGrid } from '@material-ui/data-grid';
 
 import RatingsMap from './RatingsMap/RatingsMap'
-import TestTabs from './RatingsMap/TestTabs';
+import Ctrpt from './Ctrpt/Ctrpt'
+
+const tabs = [
+    { icon: <MusicNote />, label: 'Counterpoint Checker', content: <Ctrpt /> },
+    { icon: <LiveTv />, label: 'RatingsMap', content: <RatingsMap /> },
+];
 
 const drawerWidth = 240;
 const useStyles = theme => ({
@@ -86,10 +91,6 @@ export const dark = {
         type: "dark"
     }
 };
-
-const tabs = [
-    { icon: <LiveTv />, label: 'RatingsMap', content: <RatingsMap /> },
-];
 
 class App extends React.Component {
     constructor(props) {

@@ -85,7 +85,7 @@ class CommentForm extends React.Component {
         return (
             <form onSubmit={this.handleSubmit.bind(this)}>
                 <TextField 
-                    label="RatingsMap"
+                    label='Search Show'
                     variant='filled'
                     required
                     inputRef={(textarea) => this.body = textarea}
@@ -191,6 +191,10 @@ class CommentForm extends React.Component {
     render() {
         return (
             <div>
+                <Typography variant='h2'>
+                    RatingsMap
+                </Typography>
+                
                 {this.Form()}
                 <br />
 
