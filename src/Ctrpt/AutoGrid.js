@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Box, Paper, Button, Grid, InputLabel, MenuItem, FormHelperText, FormControl, Select, TextField } from '@material-ui/core';
+import { Checkbox, Typography, Paper, Grid, FormControlLabel, InputLabel, MenuItem, FormHelperText, FormControl, Select, TextField } from '@material-ui/core';
 
 import Abcjs from './Abcjs';
 
@@ -8,11 +8,8 @@ const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
     },
-    title: {
-        padding: theme.spacing(1),
-    },
     paper: {
-        padding: theme.spacing(1),
+        padding: theme.spacing(2),
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -20,28 +17,17 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function Submit() {
-    return (
-        <Box
-            display="flex"
-            justifyContent="flex-end"
-        >
-            <Button variant="contained" color="primary">
-                Submit
-            </Button>
-        </Box>
-    );
-}
-
-export default function Form() {
+export default function AutoGrid() {
     const classes = useStyles();
-
-    const [clef, setClef] = React.useState('Treble');
-    const [key, setKey] = React.useState('C');
-    const [notes, setNotes] = React.useState('');
+    const [key, setkey] = React.useState('C');
+    const [minor, setminor] = React.useState(false);
+    const [cpclef, setcpclef] = React.useState('Treble');
+    const [cfclef, setcfclef] = React.useState('Treble');
+    const [cpnotes, setcpnotes] = React.useState('z');
+    const [cfnotes, setcfnotes] = React.useState('z');
 
     return (
-        <Grid container spacing={3}>
+        <div className={classes.root}>
             <Grid container spacing={3}>
                 <Grid item xs>
                     <Paper className={classes.paper}>
@@ -59,8 +45,8 @@ export default function Form() {
                             </InputLabel>
                             <Select
                                 labelId="demo-simple-select-label"
-                                value={clef}
-                                onChange={(event) => setClef(event.target.value)}
+                                value={cfclef}
+                                onChange={(event) => setcfclef(event.target.value)}
                             >
                                 {'Treble Alto Bass'.split(' ')
                                     .map(clef => (
@@ -77,8 +63,26 @@ export default function Form() {
                     <Paper className={classes.paper}>
                         <TextField 
                             label="Notes"
-                            onChange={(event) => setNotes(event.target.value)}
+                            onChange={(event) => setcfnotes(event.target.value)}
                         />
+                    </Paper>
+                </Grid>
+
+                <Grid item xs>
+                    <Paper className={classes.paper}>
+                        <InputLabel id="demo-simple-select-label">
+                            Key
+                        </InputLabel>
+                        <Select
+                            labelId="demo-simple-select-label"
+                            value={key}
+                            onChange={(event) => setkey(event.target.value)}
+                        >
+                            {'A, A#, Bb, B, C, C#, Db, D, D#, Eb, E, F, F#, Gb, G, G#'.split(', ').map(clef => (
+                        <MenuItem value={clef}>{clef}</MenuItem>
+
+                            ))}
+                        </Select>
                     </Paper>
                 </Grid>
             </Grid>
@@ -100,8 +104,8 @@ export default function Form() {
                             </InputLabel>
                             <Select
                                 labelId="demo-simple-select-label"
-                                value={clef}
-                                onChange={(event) => setClef(event.target.value)}
+                                value={cpclef}
+                                onChange={(event) => setcpclef(event.target.value)}
                             >
                                 {'Treble Alto Bass'.split(' ')
                                     .map(clef => (
@@ -118,59 +122,38 @@ export default function Form() {
                     <Paper className={classes.paper}>
                         <TextField 
                             label="Notes"
-                            onChange={(event) => setNotes(event.target.value)}
+                            onChange={(event) => setcpnotes(event.target.value)}
                         />
                     </Paper>
                 </Grid>
                 
-            </Grid>
-        
-            <Grid container spacing={3}>
                 <Grid item xs>
                     <Paper className={classes.paper}>
-                        <TextField 
-                            label="Key"
-                            onChange={(event) => setNotes(event.target.value)}
+                        <FormControlLabel
+                            control={
+                                <Checkbox
+                                    checked={minor}
+                                    onChange={() => setminor(!minor)}
+                                    name="checkedB"
+                                    color="primary"
+                                />
+                            }
+                            label="Minor Key"
                         />
                     </Paper>
                 </Grid>
-                <Grid item xs={8}>
-            
-                    <Abcjs
-                        abcNotation={`                    
-K:${key}
-V: 1 clef=${clef.toLowerCase()}
-L:1/1
-${notes}
-                    `}
-                    />
-                </Grid>
             </Grid>
-        
-        </Grid>
-    );
-}
-
-export function NestedGrid() {
-    const classes = useStyles();
-    const [age, setAge] = React.useState('');
-
-    const handleChange = (event) => {
-        setAge(event.target.value);
-    };
-
-    return (
-        <div className={classes.root}>
-            <Typography variant="h2" className={classes.title}>
-                Counterpoint Checker
-            </Typography>
-
-            <Stages />
-
-            <Form />
-            <br />
-
-            <Preview />
+              
+            <Abcjs
+                abcNotation={`                    
+L:1/1
+K:${key + (minor ? 'm' : '')}
+V: 1 clef=${cfclef.toLowerCase()}
+${cfnotes}
+V: 1 clef=${cpclef.toLowerCase()}
+${cpnotes}
+            `}
+            />
         </div>
     );
 }

@@ -6,7 +6,7 @@ import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-import Form from './Form';
+import AutoGrid from './AutoGrid';
 import Preview from './Preview';
 import DGrid from './DGrid';
 
@@ -30,7 +30,7 @@ function getSteps() {
 function getStepContent(stepIndex) {
     switch (stepIndex) {
         case 0:
-            return <Form />;
+            return <AutoGrid />;
         case 1:
             return <Preview />;
         case 2:
