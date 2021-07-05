@@ -4,13 +4,23 @@
   "private": true,
   "homepage": "https://georgefane.github.io",
   "dependencies": {
-    "axios": "^0.18.0",
-    "react": "^16.4.1",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/data-grid": "^4.0.0-alpha.32",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "@material-ui/x-grid": "^4.0.0-alpha.32",
+    "@slnsw/react-sheet-music": "^0.0.6",
+    "abcjs": "^5.12.0",
+    "axios": "^0.21.1",
+    "install": "^0.13.0",
+    "npm": "^7.18.1",
+    "react": "^17.0.0",
     "react-bootstrap": "^0.32.1",
-    "react-dom": "^16.4.1",
+    "react-dom": "^17.0.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
-
+    "react-scripts": "^4.0.3",
+    "styled-components": "^5.3.0",
+    "vexflow": "^3.0.9"
   },
   "scripts": {
     "start": "PORT=8080 react-scripts start",
@@ -22,5 +32,17 @@
   },
   "devDependencies": {
     "gh-pages": "^1.2.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

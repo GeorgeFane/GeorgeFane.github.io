@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 
 import Form from './Form';
 import Preview from './Preview';
-import VerticalTabs from './VerticalTabs';
+import DGrid from './DGrid';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -34,7 +34,7 @@ function getStepContent(stepIndex) {
         case 1:
             return <Preview />;
         case 2:
-            return <VerticalTabs />;
+            return <DGrid />;
         default:
             return 'Unknown stepIndex';
     }
