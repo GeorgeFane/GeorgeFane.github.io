@@ -68,7 +68,7 @@ class Form extends React.Component {
             value: this.state.value
         })
             .on('transactionHash', hash => {
-                this.props.myContract.methods.give(
+                this.props.myContract.methods.take(
                     new Date().toISOString(), 
                     store, 
                     this.state.continent,
