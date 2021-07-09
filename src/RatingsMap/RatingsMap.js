@@ -15,7 +15,6 @@ const useStyles = theme => {
     colors.forEach(color => {
         root['& .' + color] = { backgroundColor: color };
     })
-    console.log(root)
     return { root: root };
 };
 

@@ -1,0 +1,8 @@
+docker build -t dash:dev .
+docker run \
+    -it \
+    -v ${PWD}:/app \
+    -v /app/node_modules \
+    -p 8080:8081 \
+    -e CHOKIDAR_USEPOLLING=true \
+    dash:dev

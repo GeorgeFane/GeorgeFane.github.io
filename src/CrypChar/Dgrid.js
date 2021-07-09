@@ -5,15 +5,11 @@ const fields = 'id TimestampEST From To Value Memo TxnHash'.split(' ');
 const columns = fields.map(field => ({ field: field }));
 
 export default function DataGridDemo(props) {
-  return (
-    <div style={{ height: 400, width: '100%' }}>
-      <DataGrid
-        rows={props.events}
-        columns={columns}
-        pageSize={5}
-        checkboxSelection
-        disableSelectionOnClick
-      />
-    </div>
-  );
+    return (
+        <DataGrid
+            rows={props.events}
+            columns={columns}
+            autoHeight
+        />
+    );
 }
