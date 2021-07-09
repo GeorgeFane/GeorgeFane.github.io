@@ -42,14 +42,6 @@ class Form extends React.Component {
             value: this.state.value
         })
             .on('transactionHash', hash => {
-                // console.log(
-                //     new Date().toISOString(), 
-                //     charity, 
-                //     this.state.continent,
-                //     this.state.value, 
-                //     this.state.memo,
-                //     hash
-                // );
                 this.props.myContract.methods.give(
                     new Date().toISOString(), 
                     charity, 
@@ -79,16 +71,16 @@ class Form extends React.Component {
             });
     }
 
-    send = (event) => this.state.agent === 'User' ? this.donate() : this.spend();
+    send = (event) => this.state.agent === 'User' ? 
+        this.donate() : this.spend();
 
     render() {
         const classes = this.props.classes;
         return (
-            <Grid container spacing={3}>
-
+            <Grid container spacing={1}>
                 <Grid item xs={1}>
                     <Paper className={classes.paper}>
-                        <Typography variant="h6" className={classes.title}>
+                        <Typography variant="h4" className={classes.title}>
                             Form
                         </Typography>
                     </Paper>
@@ -138,7 +130,7 @@ class Form extends React.Component {
                     </Paper>
                 </Grid>
 
-                <Grid item xs={2}>
+                <Grid item xs={1}>
                     <div className={classes.paper}>
                         <Button 
                             variant="contained" color="primary"

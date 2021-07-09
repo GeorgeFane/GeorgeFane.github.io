@@ -1,6 +1,8 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography, Box, Paper, Button, Grid, InputLabel, MenuItem, FormHelperText, FormControl, Select, TextField } from '@material-ui/core';
+import { DataGrid } from '@material-ui/data-grid';
+
 import Web3 from 'web3';
 import hex2ascii from 'hex2ascii';
 
@@ -21,16 +23,20 @@ const myContract = new web3.eth.Contract(contract.abi, contract.address);
 
 const continents = ['Asia', 'Africa', 'NorthAmerica', 'SouthAmerica', 'Antarctica', 'Europe', 'Australia']
 
-function CrypChar() {
-    const [bals, setBals] = React.useState({});
-    const [events, setEvents] = React.useState([]);
+const fields = 'id TimestampEST From To Value Memo TxnHash'.split(' ');
+const columns = fields.map(field => ({ field: field }));
 
-    continents.map( (cont, i) => {
-        myContract.methods.bals(i)
-            .call( (error, result) => bals[cont] = result);
-    });
+class Map extends React.Component {
+    constructor () {
+        super();
+        this.state = {
+            rows: [],
+            bals: {},
+        };
+        this.getEvents = this.getEvents.bind(this);
+    }
 
-    function getEvents(error, data) {
+    getEvents(error, data) {
         const rows = data.map(row => row.returnValues);
         rows.forEach( (row, id) => {
             row['id'] = id;
@@ -38,27 +44,37 @@ function CrypChar() {
             row.Memo = hex2ascii(row.Memo);
             row.Value = Number(row.Value);
         })
-        setEvents(rows)
-        console.log(events)
+        this.setState({ rows });
+        console.log(rows);
     }
 
-    function load() {
+    load() {
         myContract.getPastEvents('trans', {
             fromBlock: 0,
             toBlock: 'latest',
-        }, getEvents)
+        }, this.getEvents);
     }
 
-    return (
-        <div>
-            <Form web3={web3} myContract={myContract} />
-            <TempDrawer bals={bals} />
-            <Button variant="outlined" color="secondary" onClick={load}>
-                Show Commitments
-            </Button>
-            <Dgrid events={events} />
-        </div>
-    );
+    componentDidMount() {
+        // get events
+        this.load();
+
+        // get balances
+        continents.map( (cont, i) => {
+            myContract.methods.bals(i)
+                .call( (error, result) => this.state.bals[cont] = result);
+        });
+    }
+
+    render () {
+        return (
+            <div>    
+                <Form web3={web3} myContract={myContract} />
+                <TempDrawer bals={this.state.bals} />
+                <Dgrid rows={this.state.rows} />
+            </div>
+        );
+    }
 }
 
-export default CrypChar;
+export default Map;

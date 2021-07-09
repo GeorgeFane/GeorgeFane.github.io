@@ -200,6 +200,10 @@ class App extends React.Component {
             <Paper className={classes.content}>
                 <div className={classes.toolbar} />
 
+                <Typography variant='h2'>
+                    {tabs[this.state.value].label}
+                </Typography>
+
                 {tabs[this.state.value].content}
             </Paper>
         );

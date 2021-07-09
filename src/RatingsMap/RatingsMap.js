@@ -190,10 +190,6 @@ class CommentForm extends React.Component {
     render() {
         return (
             <div>
-                <Typography variant='h2'>
-                    RatingsMap
-                </Typography>
-                
                 {this.Form()}
                 <br />
 

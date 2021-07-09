@@ -6,18 +6,10 @@ import axios from 'axios';
 const fields = 'id Hall Meal Time Foods'.split(' ');
 const columns = fields.map(field => ({ field: field }));
 
-const rows = axios.get('https://raw.githubusercontent.com/GeorgeFane/MDining-Scraper/master/scraped.txt')
-    .then(resp => resp.data.map( (row, id) => {
-        row.id = id;
-        row.Foods = row.Foods.map(food => food.trim()).join(', ');
-        console.log(row)
-        return row;
-    }))
-
 class Map extends React.Component {
     constructor () {
-        super()
-        this.state = { rows: [] }
+        super();
+        this.state = { rows: [] };
     }
 
     componentDidMount() {
@@ -25,7 +17,8 @@ class Map extends React.Component {
             .then(resp => {
                 const rows = resp.data.map( (row, id) => {
                     row.id = id;
-                    row.Foods = row.Foods.map(food => food.trim()).join(', ');
+                    row.Foods = row.Foods.map(food => food.trim())
+                        .join(', ');
                     return row;
                 });
                 this.setState({ rows });
@@ -33,7 +26,7 @@ class Map extends React.Component {
     }
 
     render () {
-        const { rows } = this.state
+        const { rows } = this.state;
         return rows.length ? (
             <DataGrid
                 rows={rows}
@@ -42,7 +35,7 @@ class Map extends React.Component {
             />
         ) : (
             <span>Loading rows...</span>
-        )
+        );
     }
 }
 
