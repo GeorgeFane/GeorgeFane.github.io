@@ -1,10 +1,21 @@
 import * as React from 'react';
 import { DataGrid } from '@material-ui/data-grid';
+import { Tooltip, Typography } from '@material-ui/core';
 
 import axios from 'axios';
 
 const fields = 'id Hall Meal Time Foods'.split(' ');
-const columns = fields.map(field => ({ field: field }));
+const columns = [
+    { field: 'id' },
+    { field: 'Hall' },
+    { field: 'Meal' },
+    { field: 'Time' },
+    { field: 'Foods', renderCell: params =>  (
+            <Typography>
+                {params.value}
+            </Typography>
+    ), },
+];
 
 class Map extends React.Component {
     constructor () {

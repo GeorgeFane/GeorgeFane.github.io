@@ -28,8 +28,8 @@ class Form extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            agent: 'User',
-            continent: 0,
+            agent: null,
+            continent: null,
             value: 0,
             memo: '',
         };
@@ -89,7 +89,7 @@ class Form extends React.Component {
                 <Grid item xs>
                     <Paper className={classes.paper}>
                         <TextField 
-                            label="Agent" value={this.state.agent} select
+                            label="Agent" select
                             onChange={(event) => this.setState({ agent: event.target.value })}
                         >
                             {'User Charity'.split(' ').map(x => (
@@ -102,7 +102,7 @@ class Form extends React.Component {
                 <Grid item xs>
                     <Paper className={classes.paper}>
                         <TextField 
-                            label="Continent" value={this.state.continent} select
+                            label="Continent" select
                             onChange={(event) => this.setState({ continent: event.target.value })}
                         >
                             {continents.map((x, i) => (
