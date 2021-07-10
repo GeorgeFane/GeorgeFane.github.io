@@ -1,27 +1,40 @@
 import React from 'react';
 import clsx from 'clsx';
 import { createMuiTheme, makeStyles, useTheme, withStyles } from '@material-ui/core/styles';
-import { Drawer, AppBar, Toolbar, List, CssBaseline, Typography, Divider, IconButton, ListItem, ListItemIcon, ListItemText, Paper, ThemeProvider, Tooltip } from '@material-ui/core';
-import { Menu, ChevronLeft, Brightness3, Brightness7, LiveTv, AccountBalance, TableChart, GitHub, LinkedIn, Create } from '@material-ui/icons';
+import { Drawer, AppBar, Toolbar, List, CssBaseline, Typography, Divider, IconButton, ListItem, ListItemIcon, ListItemText, Paper, ThemeProvider, Tooltip, Button } from '@material-ui/core';
+import { Menu, ChevronLeft, Brightness3, Brightness7, LiveTv, AccountBalance, TableChart, GitHub, LinkedIn, Create, Home } from '@material-ui/icons';
 import { DataGrid } from '@material-ui/data-grid';
 
+import Me from './Me';
 import RatingsMap from './RatingsMap/RatingsMap';
 import CrypChar from './CrypChar/CrypChar';
 import DataViz from './DataViz/DataViz';
 
 const tabs = [
-    { icon: <TableChart />, label: 'DataViz', content: <DataViz /> },
-    { icon: <AccountBalance />, label: 'CryptoCharity', content: <CrypChar /> },
-    { icon: <LiveTv />, label: 'RatingsMap', content: <RatingsMap /> },
+    {
+        icon: <Home />, label: 'Me', content: <Me />
+    },
+    {
+        icon: <TableChart />, label: 'DataViz', content: <DataViz />,
+        sub: "There is some information that is both important to me and not presented well. I retrieved this data myself, through web scraping and API calls."
+    },
+    {
+        icon: <AccountBalance />, label: 'CrypChar', content: <CrypChar />,
+        sub: "This is an MVP that uses blockchain to make charity operations more accountable. Made for Blockchain@Michigan's summer cohort project, this uses web3.js to call a Solidity smart contract."
+    },
+    {
+        icon: <LiveTv />, label: 'RatingsMap', content: <RatingsMap />,
+        sub: "I saw a great visual of Better Call Saul's ratings, with a color-coded cell for every episode of every season. There wasn't a single episode that wasn't green. Now you can see that for any show."
+    },
 ];
 
 const drawerWidth = 240;
 const useStyles = theme => ({
     root: {
         flexGrow: 1,
-        backgroundColor: theme.palette.background.paper,
         display: 'flex',
         height: '100%',
+        backgroundColor: theme.palette.background.default,
     },
     appBar: {
         zIndex: theme.zIndex.drawer + 1,
@@ -135,61 +148,14 @@ class App extends React.Component {
                     <Typography variant="h4" className={classes.title}>
                         George Fane
                     </Typography>
-                        
-                    <Tooltip title={
-                        <Typography variant='h6'>
-                            {this.state.theme ? 'Dark Mode' : 'Light Mode'}
-                        </Typography>
-                    }>
-                        <IconButton 
-                            color='inherit'
-                            onClick={this.switchTheme}
-                        >
-                            {this.state.theme ? <Brightness3 /> : <Brightness7 />}
-                        </IconButton>
-                    </Tooltip>
-                        
-                    <Tooltip title={
-                        <Typography variant='h6'>
-                            GitHub
-                        </Typography>
-                    }>
-                        <IconButton
-                            color='inherit'
-                            href="https://github.com/GeorgeFane"
-                            target='_blank'
-                        >
-                            <GitHub />
-                        </IconButton>
-                    </Tooltip>
-                        
-                    <Tooltip title={
-                        <Typography variant='h6'>
-                            LinkedIn
-                        </Typography>
-                    }>
-                        <IconButton
-                            color='inherit'
-                            href="https://www.linkedin.com/in/george-fane/"
-                            target='_blank'
-                        >
-                            <LinkedIn />
-                        </IconButton>
-                    </Tooltip>
-                        
-                    <Tooltip title={
-                        <Typography variant='h6'>
-                            Blog
-                        </Typography>
-                    }>
-                        <IconButton
-                            color='inherit'
-                            href="https://www.georgefane.com/"
-                            target='_blank'
-                        >
-                            <Create />
-                        </IconButton>
-                    </Tooltip>
+
+                    <IconButton 
+                        color='inherit'
+                        onClick={this.switchTheme}
+                    >
+                        {this.state.theme ? <Brightness3 /> : <Brightness7 />}
+                    </IconButton>
+
                 </Toolbar>
             </AppBar>
         );
@@ -244,6 +210,18 @@ class App extends React.Component {
 
                 <Typography variant='h2'>
                     {tabs[this.state.value].label}
+
+                    <IconButton
+                        color='inherit'
+                        href={"https://github.com/GeorgeFane/GeorgeFane.github.io/tree/master/src/" + tabs[this.state.value].label}
+                        target='_blank'                            
+                    >
+                        <GitHub fontSize='large' />
+                    </IconButton>
+                </Typography>
+
+                <Typography>
+                    {tabs[this.state.value].sub}
                 </Typography>
 
                 {tabs[this.state.value].content}

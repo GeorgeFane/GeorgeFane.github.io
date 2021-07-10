@@ -12,8 +12,17 @@ const useStyles = makeStyles({
 
 const charity = '0x596Aa50158BFf76F8D08F848d701C83a4F754d9c';
 
-const fields = 'id TimestampEST From To Value Memo TxnHash'.split(' ');
-const columns = fields.map(field => ({ field: field }));
+const fields = 'id TimestampEST From To Continent Value Memo TxnHash'.split(' ');
+const columns = [
+    { field: 'id', type: 'number' },
+    { field: 'TimestampEST' },
+    { field: 'From' },
+    { field: 'To' },
+    { field: 'Continent' },
+    { field: 'Value', type: 'number' },
+    { field: 'Memo' },
+    { field: 'TxnHash' },
+]
 
 export default function DataGridDemo({ rows }) {
     const classes = useStyles();

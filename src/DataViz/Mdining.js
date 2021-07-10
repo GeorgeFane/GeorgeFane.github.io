@@ -19,7 +19,6 @@ const columns = [
             <div>{params.value}</div>
         </Tooltip>
     },
-    { field: 'id' },
     { field: 'Hall' },
     { field: 'Meal' },
     { field: 'Time' },

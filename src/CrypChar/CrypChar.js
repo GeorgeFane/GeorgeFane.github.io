@@ -1,6 +1,7 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { Typography, Box, Paper, Button, Grid, InputLabel, MenuItem, FormHelperText, FormControl, Select, TextField } from '@material-ui/core';
+import { Typography, Tooltip, IconButton } from '@material-ui/core';
+import { GitHub } from '@material-ui/icons';
 import { DataGrid } from '@material-ui/data-grid';
 
 import Web3 from 'web3';
@@ -23,9 +24,6 @@ const myContract = new web3.eth.Contract(contract.abi, contract.address);
 
 const continents = ['Asia', 'Africa', 'NorthAmerica', 'SouthAmerica', 'Antarctica', 'Europe', 'Australia']
 
-const fields = 'id TimestampEST From To Value Memo TxnHash'.split(' ');
-const columns = fields.map(field => ({ field: field }));
-
 class Map extends React.Component {
     constructor () {
         super();
@@ -43,6 +41,7 @@ class Map extends React.Component {
             row.TimestampEST = hex2ascii(row.TimestampEST);
             row.Memo = hex2ascii(row.Memo);
             row.Value = Number(row.Value);
+            row.Continent = continents[row.Continent];
         })
         this.setState({ rows });
         console.log(rows);
@@ -68,7 +67,7 @@ class Map extends React.Component {
 
     render () {
         return (
-            <div>    
+            <div>
                 <Form web3={web3} myContract={myContract} />
                 <TempDrawer bals={this.state.bals} />
                 <Dgrid rows={this.state.rows} />
