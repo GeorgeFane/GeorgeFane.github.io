@@ -1,8 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
 import { createMuiTheme, makeStyles, useTheme, withStyles } from '@material-ui/core/styles';
-import { Drawer, AppBar, Toolbar, List, CssBaseline, Typography, Divider, IconButton, ListItem, ListItemIcon, ListItemText, Paper, ThemeProvider } from '@material-ui/core';
-import { Menu, ChevronLeft, Brightness3, Brightness7, LiveTv, MusicNote, AccountBalance, TableChart } from '@material-ui/icons';
+import { Drawer, AppBar, Toolbar, List, CssBaseline, Typography, Divider, IconButton, ListItem, ListItemIcon, ListItemText, Paper, ThemeProvider, Tooltip } from '@material-ui/core';
+import { Menu, ChevronLeft, Brightness3, Brightness7, LiveTv, AccountBalance, TableChart, GitHub, LinkedIn, Create } from '@material-ui/icons';
 import { DataGrid } from '@material-ui/data-grid';
 
 import RatingsMap from './RatingsMap/RatingsMap';
@@ -135,19 +135,61 @@ class App extends React.Component {
                     <Typography variant="h4" className={classes.title}>
                         George Fane
                     </Typography>
-    
-                    <Typography variant="h6" className={classes.title}>
-                        Time: {new Date().toLocaleTimeString()}
-                    </Typography>
-    
-                    <IconButton
-                        edge="end"
-                        color="inherit"
-                        aria-label="mode"
-                        onClick={this.switchTheme}
-                    >
-                        {this.state.theme ? <Brightness3 /> : <Brightness7 />}
-                    </IconButton>
+                        
+                    <Tooltip title={
+                        <Typography variant='h6'>
+                            {this.state.theme ? 'Dark Mode' : 'Light Mode'}
+                        </Typography>
+                    }>
+                        <IconButton 
+                            color='inherit'
+                            onClick={this.switchTheme}
+                        >
+                            {this.state.theme ? <Brightness3 /> : <Brightness7 />}
+                        </IconButton>
+                    </Tooltip>
+                        
+                    <Tooltip title={
+                        <Typography variant='h6'>
+                            GitHub
+                        </Typography>
+                    }>
+                        <IconButton
+                            color='inherit'
+                            href="https://github.com/GeorgeFane"
+                            target='_blank'
+                        >
+                            <GitHub />
+                        </IconButton>
+                    </Tooltip>
+                        
+                    <Tooltip title={
+                        <Typography variant='h6'>
+                            LinkedIn
+                        </Typography>
+                    }>
+                        <IconButton
+                            color='inherit'
+                            href="https://www.linkedin.com/in/george-fane/"
+                            target='_blank'
+                        >
+                            <LinkedIn />
+                        </IconButton>
+                    </Tooltip>
+                        
+                    <Tooltip title={
+                        <Typography variant='h6'>
+                            Blog
+                        </Typography>
+                    }>
+                        <IconButton
+                            color='inherit'
+                            href="https://www.georgefane.com/"
+                            target='_blank'
+                        >
+                            <Create />
+                        </IconButton>
+                    </Tooltip>
                 </Toolbar>
             </AppBar>
         );

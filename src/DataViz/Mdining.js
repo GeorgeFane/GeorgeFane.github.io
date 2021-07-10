@@ -6,15 +6,23 @@ import axios from 'axios';
 
 const fields = 'id Hall Meal Time Foods'.split(' ');
 const columns = [
+    {
+        field: 'Foods',
+        renderCell: params => <Tooltip
+            placement='right'
+            title={
+                <Typography variant='h6'>
+                    {params.value}
+                </Typography>
+            }
+        >
+            <div>{params.value}</div>
+        </Tooltip>
+    },
     { field: 'id' },
     { field: 'Hall' },
     { field: 'Meal' },
     { field: 'Time' },
-    { field: 'Foods', renderCell: params =>  (
-            <Typography>
-                {params.value}
-            </Typography>
-    ), },
 ];
 
 class Map extends React.Component {
@@ -38,15 +46,11 @@ class Map extends React.Component {
 
     render () {
         const { rows } = this.state;
-        return rows.length ? (
-            <DataGrid
-                rows={rows}
-                columns={columns}
-                autoHeight
-            />
-        ) : (
-            <span>Loading rows...</span>
-        );
+        return rows.length ? <DataGrid
+            rows={rows}
+            columns={columns}
+            autoHeight
+        /> : <span>Loading rows...</span>;
     }
 }
 

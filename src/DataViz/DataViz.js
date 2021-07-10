@@ -9,8 +9,8 @@ import TabPanel from '@material-ui/lab/TabPanel';
 import Mdining from './Mdining';
 import CryptoQuotes from './CryptoQuotes';
 const tabs = [
-    { label: 'CryptoQuotes', content: <CryptoQuotes /> },
     { label: 'Mdining', content: <Mdining /> },
+    { label: 'CryptoQuotes', content: <CryptoQuotes /> },
 ];
 
 const useStyles = makeStyles((theme) => ({
