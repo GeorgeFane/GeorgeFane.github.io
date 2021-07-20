@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { DataGrid } from '@material-ui/data-grid';
 import { Tooltip, Typography } from '@material-ui/core';
+import { readString } from 'react-papaparse';
 
 import axios from 'axios';
 
@@ -17,27 +18,13 @@ const usdPrice = {
 
 const pct = {
     type: 'number',
+    width: 144,
     valueFormatter: (params) => {
         const valueFormatted = Number(params.value * 100).toLocaleString();
         return `${valueFormatted} %`;
     },
 }
 
-const sample = {
-    "name":"Bitcoin",
-    "price":33010.0697484057,
-    "volume_24h":28915872345.6352500916,
-    "percent_change_1h":0.0157456,
-    "percent_change_24h":-0.77388887,
-    "percent_change_7d":-0.05832909,
-    "percent_change_30d":1.01173964,
-    "percent_change_60d":-44.28185933,
-    "percent_change_90d":-45.67767242,
-    "market_cap":618988719008.0666503906,
-    "last_updated":"2021-07-09T04:29:02.000Z"
-};
-
-const fields = 'id Hall Meal Time Foods'.split(' ');
 const columns = [
     { field: 'name' },
     { field: 'last_updated' },
@@ -59,9 +46,9 @@ class Map extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('https://raw.githubusercontent.com/GeorgeFane/cmc-api/main/today.json')
+        axios.get('https://raw.githubusercontent.com/GeorgeFane/cmc-api/main/today.csv')
             .then(resp => {
-                var rows = resp.data;
+                var rows = readString(resp.data, { header: true }).data;
                 rows.forEach( (row, id) => row.id = id);
                 this.setState({ rows });
             });

@@ -20,14 +20,14 @@ function CenteredGrid() {
     return (
         <div className={classes.root}>
             <Grid container spacing={3}>
-                <Grid item xs={3}>
+                <Grid item xs>
                     <img
                         width='100%'
                         src='https://avatars.githubusercontent.com/u/39439818?v=4'
                     />
                 </Grid>
 
-                <Grid item xs={3}>
+                <Grid item xs>
                     <Paper className={classes.paper}>
                         <Typography variant='h6'>
                             Hi! I'm George Fane, a sophomore at the University of Michigan studying Business Adminstration and Computer Science.
@@ -35,7 +35,7 @@ function CenteredGrid() {
                     </Paper>
                 </Grid>
 
-                <Grid item xs={3}>
+                <Grid item xs>
                     <Paper className={classes.paper}>                        
                         <ButtonGroup 
                             variant="text" orientation='vertical' size='large'
@@ -50,13 +50,8 @@ function CenteredGrid() {
                         </ButtonGroup>
                     </Paper>
                 </Grid>
-            </Grid>
-        
-            <Grid container spacing={3}>
-                <Grid item xs={3}>
-                </Grid>
 
-                <Grid item xs={3}>
+                <Grid item xs>
                     <Paper className={classes.paper}>
                         <Typography variant='h6'>
                             I've liked the show Mad Men for a while, but just this summer I got into music and movies from that era. Since May I've watched seven Audrey Hepburn films as well as Some Like It Hot, Casablanca, and Singin' in the Rain. It's simply a joy to go into a Ross Building conference rooms, turn off the lights, put my feet up, and start an old movie.

@@ -1,0 +1,249 @@
+Barry
+17 Feb 2021
+
+Great show. I've watched it 3 times through, with the most recent time being last week. The acting is phenomenal. It still astounds me how comedic actors like Bill Hader can deliver incredible dramatic performances. Some of the other characters are grating (I was annoyed by the actor types during the pilot), but that's probably an intentional move by the show, to satirize the LA acting scene.
+
+Highlights:
+
+'My lord, the Queen is dead' - s1e7
+
+Barry's face dropping emotion after Janice - s1e8, s2e6
+
+'WHY DID YOU SAY THAT?' - s1e7
+
+'FUUUUCHES!' - s2e8
+
+
+Better Call Saul
+17 Feb 2021
+
+Really love this show. I watched Better Call Saul the whole way through before Breaking Bad (I watched the pilot of BB during middle school and was put off by the violence), and I like it better than Breaking Bad, which is atypical for people who've watched both.
+
+It has a very slow start, particularly for people who have watched BB prior. I hadn't, so the slow pace was a surprise but not a deal breaker. Perhaps those fans expected more of the cartel side rather than Jimmy's law side, but I enjoyed watching Jimmy's slow decline into Saul.
+
+The seasons get better as you go on (you can see that the season means across the bottom mostly keep increasing), and the fifth season, particularly the last few episodes, are amazing. You simply can't look away from the 'Tell Me Again' scene in S5E9, and Jimmy screaming at Howard is very memorable. Also, Howard's continual 'Have you thought about the job?' is hilarious.
+
+Other highlights include Chuck's rant in S3E5 'Chicanery'.
+
+
+Dead to Me
+17 Feb 2021
+
+Really liked this show when I watched it. I decided to watch it because it had good ratings and because Linda Cardinelli was also in Mad Men.
+
+I tried to rewatch it, but for some reason couldn't get past the pilot. I think the great payoff of Season 1 is Christina Applegate's character learning the truth about Linda Cardinelli's character, maybe the revelation wouldn't be as impactful the second time through.
+
+
+Fleabag
+17 Feb 2021
+
+Amazing. Very unique (I haven't seen so much fourth-wall breaking since House of Cards) and it excellently interweaves comedy with really depressing moments.
+
+The 2 seasons you see below are the entire show. With 6 episodes per season and 30 minutes per episode, the entire show is only 6 hours long. You really wish there's more coming, but the creator says she's done with it. Unfortunate.
+
+The final episodes of both seasons are phenomenal. The first is very revelatory and finally shows what the protagonist has been dealing with the whole season. The episode is great because the protagonist comes to terms with that issue.
+
+The second finale is lovely for the bus stop scene between Fleabag and the Priest ('It'll pass'). Watching Fleabag walk away from the camera, it makes sense why the show stops there, but you still want more.
+
+
+House of Cards
+17 Feb 2021
+
+Liked this show a lot the first time through. The very first scene is shockingly violent and was right up my alley at the time (I was also watching Hannibal). I loved the first three seasons (I really enjoyed Frank's conniving and angling to the Presidency), didn't like the next two as much, and didn't watch the sixth.
+
+The most recent time I tried watching it (either my second or third watch), it was a little too boring to get through. Additionally, by that time Kevin Spacey's #MeToo revelations came out, and people watching this show were faced with the question of whether you can separate the artist from the art. I absolutely can. The show is the same before and after, which means the acting and writing and directing is just as good. If the work is fiction, the actor and their character are different, so I can happily root for the character without supporting the actor. Let's take an example on the other side. I love the movie Forrest Gump, but Tom Hank's wholesomeness in real life doesn't make his performance any better.
+
+On a different note, take a look at the heatmap below. The first five seasons have amazing ratings judging by their coloring, but the awfulness of the 6th seasons probably makes everything else seem great. I don't just mean that qualitatively; I believe that lower minimums make the higher ratings have less of a difference in color, by the mechanics of Pandas's background_gradient function that I use. Looking at the numbers, the first five seasons have ratings in line with Better Call Saul, but the latter has a higher variety of shades.
+
+
+Ingrid Goes West
+17 Feb 2021
+
+I had high hopes for this film that went unanswered. I love Aubrey Plaza in Parks and Rec and the Little Hours, and Olsen in WandaVision, and I thought that Plaza would play a much more violent, deranged character. The first scene, focusing on Ingrid's wide-open, crying yet emotionless eyes set the expectation that she would eventually kill Olsen's character, particularly because Ingrid goes from crying in her car to spraying mace at a bride.
+
+Thinking about it now, Ingrid is impressive for hiding her manic obsession for Olsen's character when in her presence (think about their first dinner together and the trip to Joshua Tree). Also, her rash purchase of the house next to Taylor's and complete focus on watching Taylor rather than paying the bills is unique, but I was (unhappily) surprised that she left Taylor's brother alive. I think it would've shown the depth of her obsession and also, Taylor's brother deserved it.
+
+The ending was guessable and too easy for what Ingrid deserved. Dan Pinto is happy to see her after saving her life: the latter is basically a human obligation, but the former is extra. I guess her post going viral has a good lesson about being yourself, but it's still too nice for her after her behavior during the movie.
+
+The several minutes between Ingrid macing the bride and discovering Taylor are boring. It's likely intentional, to show that Ingrid doesn't have much going on in her life, but as Matthew Weiner said about Mad Men s7e1, "It only takes a couple shots to convince the audience that a character is not up to much." The start of her time in LA is also a drag; the film should've taken much less time on Ingrid copying Taylor's interests and more time on their direct interactions.
+
+You can tell I didn't like the story (certain parts of writing were weak as well, like Dan Pinto's clunky exposition during his dinner with Ingrid: "As an orphan, I related to that". Who talks like that casually?). The acting was nice, though. The leads were good, and Taylor's brother was expertly portrayed to make me hate him.
+
+Still, I do not recommend this. Most films and shows I review on this site are my favorites, but not this one.
+
+Mad Men
+17 Feb 2021
+
+Probably my favorite show. I've watched it twice all the way through, and I'm on Season 5 in a slow 3rd watch.
+
+It's a very slow show, even more so than Better Call Saul, and for me it's often hard to describe what's so great at it. One review I read characterized the show as several episodes of emotions festering under the surface culminating in rare confrontations, and those confrontations are the best episodes of the show.
+
+Namely, s4e7'The Suitcase'. Peggy airs her grievances about Glo-Coat and Don is forced to come to terms with Anna (Don's few visits to Anna were some of the sweetest moments of the show). Characters honestly talking about their feelings and fast plots are anathema. The show so conditions you to think this way that Don's admission to Peggy in s7e6 'Waterloo' that he has no one feels almost out of character. Furthermore, it sometimes still shocks me to remember that Don's cross-country trip is entirely contained by the show's LAST TWO episodes.
+
+On my second and third watches through, I developed a more negative view of the first season. It's still good, but Don comes across as a cliché curt boss. The exposition from Midge about Don in the pilot is painful to listen through. However, Adam coming in and Don's flashbacks mark a turning point in the season from somewhat boring and cliché to the interesting, complex show that Mad Men is known for.
+
+Fun fact: this is the show that I tended to use as test data when developing my RatingsMap application
+
+Highlights:
+
+The Carousel pitch - s1e13
+
+Don visiting Anna - multiple
+
+The Suitcase - s4e7
+
+Don and Peggy preparing BurgerChef - s7e6
+
+Sally and Don - s7e2
+
+Leonard's monologue - s7e14
+
+Peggy and Pete - s2e13
+
+
+Tenet
+18 Feb 2021
+
+Probably my favorite film right now. The concept is just so cool and invites rewatching even more than other Nolan films (I think I've watched this 5 times).
+
+Why I Watched
+
+Choosing to watch this film was an easy decision. I love Nolan movies and JDW was great in BlacKKKlansman. And I haven't even mentioned the soundtrack: what a banger. I had been a fan of Ludwig Gorannson since his work for Black Panther, and I listened to the Tenet soundtrack religiously. 
+
+I always played it during basketball on the Oxford Houses basketball court (it pumped me up), and the habit got to the point where if I had my earbuds in around other people, they knew I was listening to Tenet. It was a bit goofy at times; I explained to someone that one track, 'Trucks in Place', has a reversed sample of a firetruck siren, so I found that track reversed to listen to a forward firetruck siren. They looked at me like the concerned parent of a kid who just chugged glue.
+
+Nolan Movie Flaws
+
+These are definitely there: poor audio mixing, clunky exposition, confusing plot. They didn't detract from my experience, though. On the flaw of exposition, perhaps the audience noted the trailer's lack of specificity and is hungry for details and mechanics while watching the movie. Maybe the spy genre lends itself to continual discovery of information.
+
+The crappy audio made a difficult plot even more complex. Sator's motivation wasn't great, and was even worse what for the song 'Posterity' blasting. Same thing during the Kyiv Opera Siege: 'Rainy Night in Tallinn' is great, but not when the Protagonist is talking.
+
+Upsides
+
+We have an issue today of reboots, adaptations, and nonfiction works; I want original screenplays like Inception, Shape of Water, and Skeleton Twins. Tenet blows these out of the water with not just an original screenplay but an original idea of traveling back in time not by a time jump but second by second. The reverse fight scenes and car chase are incredible, and I particularly enjoyed the RED ROOM BLUE ROOM interrogation, where inverted Sator questions the normal Protagonist.
+
+Verdict
+
+Definitely recommend. With captions.
+
+Death of Stalin
+17 Feb 2021
+
+This is the reason why I felt the need for a movie watchlist. This is the movie I thought about and forgot as described on the homepage.
+
+I watched this for the first time on a plane, I think, because of the creator Armando Iannucci (he also created Veep, on of my favorite shows). The film is a standout for portraying a complex and serious power struggle in such a funny way.
+
+Best movie I've watched recently. I watched it twice within a few days. I chose to watch it because I liked Bill Hader in Barry and Kristen Wiig in SNL (because of this movie, I watched two other Wiig films: Bridesmaids and Welcome to Me, and I'm going to watch Barb and Star).
+
+Skeleton Twins
+17 Feb 2021
+
+Just a great movie all the way through, mixing comedy and drama like Fleabag. Like in Barry, I'm impressed how these SNL talents shine in serious roles. My favorite moments include the famous lip-sync scene (watched it in YouTube several times), the twins' fight during Halloween, and their fight when Lance discovers the pills. Hader admirably puts such venom in his voice during the last scene when he says, "Maybe I should try fucking all my problems away." Another part that I liked, a really short scene, was Wiig's character sinking underwater in her bathtub when Lance asks her to add something to the shopping list. Really captures her dejectedness about her life in a straightforward way.
+
+
+WandaVision
+12 March 2021
+
+I really loved the first three episodes*, and my opinion dropped as the show had less sitcom and more present-day Marvel show.
+
+*I'm looking at the RatingsMap now and I'm flabbergasted as to why the episodes I like have the worst ratings out of the whole season
+
+The first episode was phenomenal for me. I'd never really watched the early shows that created the sitcom genre, so taking in the premier's '50s-style comedy was very entertaining and fresh*.  It had lots of laughs, and the sudden tone shift during the dinner party downright disturbed me, as was its purpose. Can't describe enough how good this episode was.
+
+*Because of this show, I watched a few clips of I Love Lucy and Golden Girls.
+
+The greater focus starting Episode 4 on the 'present-day', or the world outside Westview, made the rest of the season more tedious to watch. I feel that the show devolves into the typical Marvel writing that is not known for emblemizing prestige TV. Think of Marvel's Agents of Shield (I don't know much about it except that nobody talks about it) and the snarky quips that aren't that funny.
+
+The 8th episode was particularly a pain. The show needed exposition to set up the finale, but I suppose I don't like it when it's obviously exposition and all crammed together. I prefer spaced-out info drops along the series that slowly build. As an example, the small, perplexing indicators in the season's first third, that things might not be as pleasant as they seem, really built my interest in the show.
+
+Of course the finale had a massive fight, like the 'third act brouhaha' that always show up in Marvel films, as I believe the YouTube channel HonestTrailers calls it. I know audiences like it, but it's not for me. Other shows have cooler visuals on lower budgets.
+
+I recommend that you watch this show. There's a high chance you'll like it, but I know I won't rewatch it.
+
+
+Twin Peaks
+12 March 2021
+
+I'm done with the first two seasons and not the third, but I really enjoy this show. Here's what I wrote in my journal yesterday:
+
+Finished Season 2 of Twin Peaks today. Honestly don’t think it was that bad. It had the problem of retelling things, but it didn’t take away too much of the experience. Maybe some of the supernatural stuff was missing and Windom Earle was a typical insane antagonist, but I quite enjoyed it. The finale was beautiful and ‘made it all worth it’, even though the season stood up on its own. 
+
+Outside of the surreal elements, which I'll discuss below, I enjoy the show. I tried watching Mulholland Drive but was bored after the first half-hour and stopped because of the sprawling storylines, but the expansiveness and randomness really works in a funny show like this one. This probably drives my favorable opinion of the second season. I didn't notice a significant drop-off after the first season, unlike The Office after Michael leaves or Mad Men after Season 6 (Season 7 is still great, but the rapid pace is a definite departure from style and its peak).
+
+The surrealism and David Lynch's style, though, are the clearest draws. There is a clip on YouTube of Cooper's dream in the third episode, with the girl who looks like Laura Palmer and the little man. The randomness of the man's dialogue and the backwards talking (anything inverted is interesting after Tenet) were intriguing. This comment is significant to me:
+
+
+It's unfortunate, but other people's opinions definitely affect my own. Arlo hyping up the show definitely kept me open to continuing even after I couldn't finish the pilot (no surrealism and I wasn't used to the randomness at the time). I expect other people to be right, which is why I trust Rotten Tomatoes a lot in guiding what content I consume and why I was so disappointed in Ingrid Goes West: RT made me expect something better.
+
+In contrast to WandaVision, the visuals in this show that are meant to stun really do. The third season's scene with the eyeless woman was incredible both on YouTube, where I first watched it, and during my actual watch of the third season. While I haven't gotten to the nuclear bomb scene later in the season, commenters on YouTube have rave reviews, and I agree. It's incredibly unique.
+
+This is a definite recommend. My friends watch Riverdale and All-American, and complain about their declines in quality; I don't know much about those shows but I'd put them on Twin Peaks.
+
+
+The Mandalorian
+23 March 2021
+
+This is just a straightforward, enjoyable show. That's not to disparage it; the show is all about the dedication that Mando has for the Child, which is different from most shows I like that have a messed up main character. It reminds me of the Honest Trailers channel's description of Hell or High Water: so straightforward and enjoyable it has no chance of winning Best Picture. 
+
+The two season seemed similar in quality. I recall social media posts describing the second season as a continual stream of side quests, but I didn't notice while watching. The hallway scene was great, even though I don't particularly like any of the nine Star Wars movies, and the subsequent goodbye was touching. Mando, Bo-Katan, and the other two taking the gunship (s2e4)  was a great sequence, as was Mando hunting down his heist accomplices in the Imperial prison (s1e6)*.
+
+*Random, but this was the thing I watched right before learning how to juggle. I told that story for a BCOM 250 assignment.
+
+It's strange that my attitude has become so lukewarm toward this show. This is a definite recommend, even for those, like me, who aren't Star Wars fans. Similar to Wandavision, there is a very high chance that you'll enjoy this show. The cute little Grogu probably had the merchandise sales of an entire movie, and seeing social media's adoration for the little rascal was a definite draw for me to start this show.
+
+For how good the show is, the soundtrack is even better. In the very first scene of the series, Mando's theme, that will soon be familiar to you, gives way to an industrial, bass-heavy section that complements the visual side of the sequence: Mando easily kills the other bounty hunters who are competing with him to take a target. It tells you that this quiet, armored figure is an intimidating expert.
+
+I'm realizing now that my favorite tracks from the two seasons of soundtracks play during my favorite scenes. 'Little Mousey' plays while Mando takes out his crewmates in the s1e6 prison, and 'Ship o hoj, Mandalorians' takes place during the s2e4 raid on the gunship (I really like the part around 7:00). 'Troopers' and 'A Friend', subsequent songs in the Season 2 finale, contain unexpected but retrospectively perfect dubstep. I'm not a fan of dubstep, but for a while I listened to these two songs during my morning walks, to wake me up for the day's classes.
+
+It's simply a magnficient soundtrack. It's made by Ludwig Goranssen, the same guy who scored Tenet and Black Panther.
+
+
+The Kominsky Method
+23 March 2021
+
+I finished this show today, a Tuesday, and I started it right before a Michigan Investment Group meeting on Sunday. It's really short, only 30 minutes an episode, and contains 16 total episodes over two seasons. It's got Fleabag length.
+
+This is an extremely funny show, going through the problems that old people face. Of the two leads (or maybe not: I saw Michael Douglas nominated for Lead Actor and Alan Arkin for Supporting Actor in this year's Emmies), Arkin's Norman Newlander makes me laugh more. He's an abrasive, honest, and philosophical person that at times reminds of Larry David's character in Curb Your Enthusiasm (speaking of which: despite being centered on Douglas's Sandy Kominsky, the beginning funeral portion of s1e3 really evoked a Curb episode). Norman's interrupted eulogy at the end of s1e2, less than two minutes long, brought tears to my eyes, both when I watched the whole episode and when I searched for the clip on YouTube. The plainly-worded but specific memories of his wife, combined with Arkin's excellent performance, were perfectly crushing.
+
+I'm trying to think of what I liked about Season 2, and it has to be Norman getting over his grief and dating Madelyn, played by Jane Seymour. My favorite parts center on Norman, which is limiting considering that Arkin will not return for Season 3. Kominsky's first ex-wife will take his place. It might work out, but I'm sad that Norman won't be there.
+
+There are parallels with other shows I've watched. I mentioned Fleabag for their similar runtimes, but they also both have a main character dealing with their grief over losing someone special to them. A difference, and I particularly noticed this with the Season 2 finale, is that there isn't a great, impactful resolution at the end of the season that typical finales contain. The last line of Season 2 is about Kominsky's slow urination, a problem that was introduced in s1e3, treated somewhat with Martin's help, and not brought up much later in Season 2. It has the same lightness as the other episodes in the season, which contrasts sharply with Fleabag's two very heavy and cathartic season finales.
+
+There's also Barry, for the shallow reason that both shows have an acting coach. In this, too, Barry might be better for showing Gene Cousineau's emotional lows at the end of Season 2.
+
+Despite my comparisons, this show is great and a recommended watch. Gutbustingly funny, particularly due to Arkin's performance.
+
+
+Homeland
+25 April 2021
+
+This show is incredible. I started it on March 25th and finished it on April 19th. That's 25 days for 96 episodes (hours) of content, which averages to 4 episodes per day. My goodness, that's a lot. Especially during the school year. Last week was when classes ended, to give students time to study for finals in the week ahead of us. That Monday, I watched the last ten episodes of the series, just to procrastinate on studying.
+
+The first season was amazing, wrapped around the mystery of who Brody really was. When I saw him praying, I thought, 'he's a goner'. When Carrie confronts him at the lake and he says to 'put a gun to my head', I thought he completely explained himself, even though looking back I shouldn't have believed him. On a different note, many reviews said that if Brody did go through with his plan in the finale and the show ended there, Homeland would have cemented itself as the greatest miniseries of all time. I would've enjoyed that, but I also enjoyed what we got: you might be possessed by an idea, drilled into you for years and years, but just a few minutes of contact with your loved ones could clear your mind. Unrelated, but the two-minute no-cut scene at the end of Episode 10, when David tears down Carrie's wall, was incredible and really stuck with me. I now see why SNL made that Homeland sketch.
+
+I quite liked the second season, but I noticed that it had less draw than the first. By that I mean there wasn't as intense an urge to watch the next episode after finishing one. I think it lost the central mystery that kept me going. Brody's character is completely known by this point; the only question is Quinn, but he doesn't have the same attachment to Carrie or the same possibility to be a villain. He's just there to do one thing for Dar Adal. It was still good, though. I read a few show reviews about the series finale, mentioning 'creative missteps' in the second season, but the reviews didn't elaborate on that, so I still don't understand what they mean. The finale was great. I wish Claire and Brody had become fugitives together, like Hannibal and Will could in the fourth season, or Eve and Villanelle could've after the second season.
+
+I especially wished that when we saw Brody's condition in the third season. His story was just a ton of sitting and waiting, and I thought that would be his fate before Saul picked him up. Similarly, it was painful to watch Carrie go through the public humiliation that she planned with Saul, but I really loved the last few episodes, both the Special Ops side and the emotional side, when Carrie has to say goodbye to Brody.
+
+The show was dealt a big blow by losing Brody, but the fourth season was pretty good. It was mildly amusing to see Duck Phillips again, who resembled his later-season stint in Mad Men as a rather powerless man overshadowed by a stronger woman (Peggy there, Martha here). The hallucination sequence with the Pakistani colonel was nice in that we saw Brody again, but Carrie opening herself up didn't have the same effect as when she did with Yevgeny Gromov. In this season, Carrie and the colonel just exchange intelligence a couple times. The Benghazi sequence in the later episodes was amazing; but the Senator/Director should've steeled himself and not opened the door. If Quinn and the soldier had just fired sooner, I bet Haqqani and his buddies would've run away all the same as if the door had opened. The last episode was awful. I had expected closure on Haqqani, but we just had to live with him running away into the mountains. We didn't have the action of the last three finales. IMDb backs me up: look at that singular white cell below at s4e12. Quinn coming onto Carrie was dumb, because that one-way romance was basically a one-off line from Dar Adal and not backed up by their interactions in past seasons. Carrie's rejection was a nice driver for him to go to Syria, though.
+
+The fifth season was good, but Allison and Saul getting together was extremely sudden. It was strictly professional, even adversarial, and suddenly they're seen sharing a bed. The ending Saul designed for her was extremely cold, but I suppose it made sense for him. The Otto During proposition at the end was pretty dumb; he wanted someone that had big ideas, which translates better to a business partnership rather than a romantic one. I felt bad for Quinn; I thought he would be completely immune to the sarin because of his injection, and that his spasms in the beginning were fake. Pretty soon we realize that they weren't, but at least he lived. Later, Carrie made the right decision in trying to wake him up, but his state in the next season was regrettable. Also, I really liked the long-cut scene where Saul downloads the files for Carrie. I rewatched it a few times to admire the camera movement and smoothness.
+
+I really did not like the sixth season. It seemed to turn into a legal drama, and Sekou was quite unwise continuing to post videos when his deal hinged on the shutting down of his content creation. It was painful to watch Quinn, and his decision-making the hostage-taking episode was awful. Shooting the protester was alright because he threw rocks, but I thought he would stop with all of that business when they dispersed and the cops showed up. I was relieved when we learned that Carrie was secretly advising Keane, because otherwise the show wouldn't've extended past piddly shit. Dar Adal admitting that he 'forced himself on' Quinn was a stupid, underdeveloped thing to include, as was his relationship with a male GWU professor in the finale. Singular, throwaway lines with no backup. The rest of the finale was awful; how could the Secret Service take a bomb threat seriously when the hotel is swept all the time? Someone even tells Carrie that before the cars exit the garage. I can believe a team of Deltas is radicalized to kill the President, but not all the military guys standing at the edge of the kill zone. That was way more than the handful of people in that SpecOps safe house. At least Quinn got a nice, purposeful ending, and the next season was set up well on the foundation of a tyrannical president.
+
+I don't have much to say about the last two seasons, but I liked them a lot, much more than Season 6. While most seasons have a slow start, I could tell immediately that the last season was good. The last ten minutes of the series could've been stretched into a half-hour epilogue, but it was a sweet, sort of fairytale ending. I liked it.
+
+
+Breakfast at Tiffany's (1961)
+Written 17 May 2021, watched 16 May
+
+Pretty good. Not one of my favorites, but quite enjoyable. I chose this film because I've been listening to Audrey Hepburn's Moon River on repeat over the last several days. No joke, I walked to Angell Elementary to shoot hoops for an hour and I looped this two-minute song alone. I really liked Frank Ocean's Moon River maybe a year back and vaguely knew then that it was a cover, but didn't enjoy the original until now. What a delight. A simple background of guitar, maybe an arpeggio if I'm remembering my music terminology correctly, with strings coming in later, if I recall. Her voice is breathy, but that adds emotion to the singing.
+
+Anyways, the movie was nice. The first scene, while credits show up, immediately grabs your attention, as does her singing later on in the film. The party scene had some nice goofy humor. The actor for Paul Varjak didn't seem to have excellent chemistry with Hepburn, and the character just does stuff for other people like a pushover. There's the man-grabs-the-woman-by-the-shoulder-and-shakes-scene in the library, though.
+
+Roman Holiday (1953)
+Written 17 May 2021, watched 17 May
+
+Great. Breakfast at Tiffany's was pretty good, and this was even better. This movie was mentioned in Rick Riordan's Mark of Athena, when Percy and Annabeth are in Rome. I think they meet the personification of the River Tiber and his girlfriend or wife, and they're dressed like Gregory Peck and Audrey Hepburn in Roman Holiday. The two descriptions I remember are 'a baby-blue moped' and 'high-waisted pants that somehow didn't make him look like a complete goofball' (paraphrased, definitely).
+
+Wonderful chemistry between Peck and Audrey. Good physical comedy when Joe screws around with Irving, and the first scene with the shoe is quite funny.

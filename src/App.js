@@ -9,14 +9,19 @@ import Me from './Me';
 import RatingsMap from './RatingsMap/RatingsMap';
 import CrypChar from './CrypChar/CrypChar';
 import DataViz from './DataViz/DataViz';
+import ShowReviews from './ShowReviews/App';
 
 const tabs = [
     {
         icon: <Home />, label: 'Me', content: <Me />
     },
     {
+        icon: <TableChart />, label: 'ShowReviews', content: <ShowReviews />,
+        sub: "I watch a lot of movies and TV shows. Here are my reviews."
+    },
+    {
         icon: <TableChart />, label: 'DataViz', content: <DataViz />,
-        sub: "There is some information that is both important to me and not presented well. I retrieved this data myself, through web scraping and API calls."
+        sub: "There is some information that is both important to me and not presented well natively. I retrieved this data myself, through web scraping and API calls."
     },
     {
         icon: <AccountBalance />, label: 'CrypChar', content: <CrypChar />,
@@ -34,7 +39,6 @@ const useStyles = theme => ({
         flexGrow: 1,
         display: 'flex',
         height: '100%',
-        backgroundColor: theme.palette.background.default,
     },
     appBar: {
         zIndex: theme.zIndex.drawer + 1,
@@ -205,19 +209,20 @@ class App extends React.Component {
         const { classes } = this.props;
         //return tabs[this.state.value].content
         return (
-            <Paper className={classes.content}>
+            <div className={classes.content}>
                 <div className={classes.toolbar} />
 
                 <Typography variant='h2'>
                     {tabs[this.state.value].label}
 
-                    <IconButton
+                    {!this.state.value ? <div /> : <IconButton
                         color='inherit'
                         href={"https://github.com/GeorgeFane/GeorgeFane.github.io/tree/master/src/" + tabs[this.state.value].label}
                         target='_blank'                            
                     >
                         <GitHub fontSize='large' />
-                    </IconButton>
+                    </IconButton>}
+                    
                 </Typography>
 
                 <Typography>
@@ -225,58 +230,29 @@ class App extends React.Component {
                 </Typography>
 
                 {tabs[this.state.value].content}
-            </Paper>
-        );
-    }
-    
-    DataGridDemo(rows) {
-        if (!rows.length){
-            return (
-                <div>
-                    No Rows
-                </div>
-            );
-        }
-
-        var columns = [{field: 'id'}].concat(Object.keys(rows[0])
-            .map(key => (
-                {
-                    field: key,
-                    width: 200,
-                }
-            ))
-        );
-        
-        rows.forEach((row, index) => row['id'] = index);
-    
-        const data = {
-            rows: rows,
-            columns: columns,
-            pageSize: 5,
-            autoHeight: true,
-        };
-        
-        return (
-            <div style={{ height: 400, width: '100%' }}>
-                <DataGrid {...data} />
             </div>
         );
     }
 
     render() {
-        //return <Priority1 />;
-
         const { classes } = this.props;
         const appliedTheme = createMuiTheme(this.state.theme ? light : dark);
 
         return (
             <ThemeProvider theme={appliedTheme}>
+                <CssBaseline />
                 <div className={classes.root}>
-                    <CssBaseline />
                     {this.Top()}
                     {this.Side()}
                     {this.Bottom()}
                 </div>
+            </ThemeProvider>
+        );
+
+        return (
+            <ThemeProvider theme={appliedTheme}>
+                <CssBaseline />
+                    <Me />
             </ThemeProvider>
         );
     }
