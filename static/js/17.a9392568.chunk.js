@@ -1,0 +1,2 @@
+(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[17],{877:function(s,e,p){"use strict";p.r(e),e.default=p.p+"static/media/Twin Peaks.5eea080c.md"}}]);
+//# sourceMappingURL=17.a9392568.chunk.js.map

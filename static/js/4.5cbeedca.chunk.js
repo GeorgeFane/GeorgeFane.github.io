@@ -1,0 +1,2 @@
+(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[4],{864:function(s,a,p){"use strict";p.r(a),a.default=p.p+"static/media/Breakfast at Tiffany's.c6b18fc2.md"}}]);
+//# sourceMappingURL=4.5cbeedca.chunk.js.map

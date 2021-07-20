@@ -1,0 +1,2 @@
+(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[12],{872:function(a,p,s){"use strict";s.r(p),p.default=s.p+"static/media/Roman Holiday.5c0e04a3.md"}}]);
+//# sourceMappingURL=12.d0297835.chunk.js.map

@@ -1,0 +1,2 @@
+(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[10],{870:function(s,p,e){"use strict";e.r(p),p.default=e.p+"static/media/Ingrid Goes West.f31a1279.md"}}]);
+//# sourceMappingURL=10.b053d772.chunk.js.map
