@@ -1,2 +1,0 @@
-(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[13],{873:function(s,p,e){"use strict";e.r(p),p.default=e.p+"static/media/Skeleton Twins.34f2c028.md"}}]);
-//# sourceMappingURL=13.a3a81352.chunk.js.map

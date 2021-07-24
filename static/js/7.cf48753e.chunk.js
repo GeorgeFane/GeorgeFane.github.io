@@ -1,0 +1,2 @@
+(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[7],{885:function(a,p,s){"use strict";s.r(p),p.default=s.p+"static/media/Fleabag.1b77a0b2.md"}}]);
+//# sourceMappingURL=7.cf48753e.chunk.js.map

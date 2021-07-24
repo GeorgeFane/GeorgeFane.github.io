@@ -1,0 +1,2 @@
+(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[9],{887:function(s,e,p){"use strict";p.r(e),e.default=p.p+"static/media/House of Cards.c23ef4ec.md"}}]);
+//# sourceMappingURL=9.1864c5ca.chunk.js.map

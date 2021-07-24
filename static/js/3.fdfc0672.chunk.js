@@ -1,2 +1,0 @@
-(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[3],{863:function(a,e,p){"use strict";p.r(e),e.default=p.p+"static/media/Better Call Saul.ca74ce4a.md"}}]);
-//# sourceMappingURL=3.fdfc0672.chunk.js.map

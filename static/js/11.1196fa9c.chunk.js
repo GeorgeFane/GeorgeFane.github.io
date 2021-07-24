@@ -1,0 +1,2 @@
+(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[11],{889:function(p,s,a){"use strict";a.r(s),s.default=a.p+"static/media/Mad Men.73347d52.md"}}]);
+//# sourceMappingURL=11.1196fa9c.chunk.js.map

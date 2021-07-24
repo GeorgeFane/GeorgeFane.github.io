@@ -1,0 +1,2 @@
+(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[6],{884:function(p,s,t){"use strict";t.r(s),s.default=t.p+"static/media/Death of Stalin.1009d85b.md"}}]);
+//# sourceMappingURL=6.02917823.chunk.js.map

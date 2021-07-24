@@ -1,0 +1,2 @@
+(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[16],{894:function(a,p,s){"use strict";s.r(p),p.default=s.p+"static/media/The Mandalorian.a7d85d45.md"}}]);
+//# sourceMappingURL=16.b1457a42.chunk.js.map

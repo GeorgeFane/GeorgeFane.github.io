@@ -1,0 +1,2 @@
+(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[18],{896:function(s,a,p){"use strict";p.r(a),a.default=p.p+"static/media/WandaVision.25a2d708.md"}}]);
+//# sourceMappingURL=18.ec7e96db.chunk.js.map

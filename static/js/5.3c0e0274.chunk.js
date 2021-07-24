@@ -1,2 +1,0 @@
-(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[5],{865:function(p,s,e){"use strict";e.r(s),s.default=e.p+"static/media/Dead To Me.0b88b437.md"}}]);
-//# sourceMappingURL=5.3c0e0274.chunk.js.map
