@@ -1,26 +1,30 @@
 import React from 'react';
 import clsx from 'clsx';
-import { createMuiTheme, makeStyles, useTheme, withStyles } from '@material-ui/core/styles';
-import { Drawer, AppBar, Toolbar, List, CssBaseline, Typography, Divider, IconButton, ListItem, ListItemIcon, ListItemText, Paper, ThemeProvider, Tooltip, Button } from '@material-ui/core';
-import { Menu, ChevronLeft, Brightness3, Brightness7, LiveTv, AccountBalance, TableChart, GitHub, LinkedIn, Create, Home } from '@material-ui/icons';
-import { DataGrid } from '@material-ui/data-grid';
+import { createMuiTheme, withStyles } from '@material-ui/core/styles';
+import { Drawer, AppBar, Toolbar, List, CssBaseline, Typography, Divider, IconButton, ListItem, ListItemIcon, ListItemText, ThemeProvider } from '@material-ui/core';
+import { Menu, ChevronLeft, Brightness3, Brightness7, LiveTv, AccountBalance, TrendingUp, GitHub, Home, Movie, Apps } from '@material-ui/icons';
 
 import Me from './Me';
 import RatingsMap from './RatingsMap/RatingsMap';
 import CrypChar from './CrypChar/CrypChar';
 import DataViz from './DataViz/DataViz';
 import ShowReviews from './ShowReviews/App';
+import Gpm from './PayoffMatrixSolver/App';
 
 const tabs = [
+    {
+        icon: <Apps />, label: 'PayoffMatrixSolver', content: <Gpm />,
+        sub: "I quite enjoyed solving payoff matrices in my AP Econ class, but I was always intrigued with expanding that (2 players and 2 strategies) to handle any number of players and strategies."
+    },
     {
         icon: <Home />, label: 'Hello!', content: <Me />
     },
     {
-        icon: <TableChart />, label: 'ShowReviews', content: <ShowReviews />,
+        icon: <Movie />, label: 'ShowReviews', content: <ShowReviews />,
         sub: "I watch a lot of movies and TV shows. Here are my reviews."
     },
     {
-        icon: <TableChart />, label: 'DataViz', content: <DataViz />,
+        icon: <TrendingUp />, label: 'DataViz', content: <DataViz />,
         sub: "There is some information that is both important to me and not presented well natively. I retrieved this data myself, through web scraping and API calls."
     },
     {
@@ -153,11 +157,20 @@ class App extends React.Component {
                         George Fane
                     </Typography>
 
+                    <IconButton
+                        color='inherit'
+                        href="https://github.com/GeorgeFane/GeorgeFane.github.io"
+                        target='_blank'                            
+                    >
+                        <GitHub fontSize='large' />
+                    </IconButton>
+
                     <IconButton 
                         color='inherit'
                         onClick={this.switchTheme}
                     >
-                        {this.state.theme ? <Brightness3 /> : <Brightness7 />}
+                        {this.state.theme ? <Brightness3 fontSize='large' /> :
+                            <Brightness7 fontSize='large' />}
                     </IconButton>
 
                 </Toolbar>
@@ -221,13 +234,13 @@ class App extends React.Component {
                         target='_blank'                            
                     >
                         <GitHub fontSize='large' />
-                    </IconButton>}
-                    
+                    </IconButton>}                    
                 </Typography>
 
-                <Typography>
+                <Typography variant='h6'>
                     {tabs[this.state.value].sub}
                 </Typography>
+                <br />
 
                 {tabs[this.state.value].content}
             </div>

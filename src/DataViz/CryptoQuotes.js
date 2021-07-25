@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { DataGrid } from '@material-ui/data-grid';
-import { Tooltip, Typography } from '@material-ui/core';
 import { readString } from 'react-papaparse';
 
 import axios from 'axios';
@@ -25,12 +24,13 @@ const pct = {
     },
 }
 
+const width = 122;
 const columns = [
     { field: 'name' },
-    { field: 'last_updated' },
     { field: 'price', ...usdPrice },
-    { field: 'market_cap', ...usdPrice },
-    { field: 'volume_24h', type: 'number' },
+    { field: 'last_updated', type: 'dateTime', width },
+    { field: 'market_cap', ...usdPrice, width },
+    { field: 'volume_24h', type: 'number', width },
     { field: 'percent_change_1h', ...pct },
     { field: 'percent_change_24h', ...pct },
     { field: 'percent_change_7d', ...pct },
@@ -42,29 +42,32 @@ const columns = [
 class Map extends React.Component {
     constructor () {
         super();
-        this.state = { rows: [] };
+        this.state = {
+            rows: [],
+            loading: true,
+        };
     }
 
     componentDidMount() {
         axios.get('https://raw.githubusercontent.com/GeorgeFane/cmc-api/main/today.csv')
             .then(resp => {
                 var rows = readString(resp.data, { header: true }).data;
-                rows.forEach( (row, id) => row.id = id);
-                this.setState({ rows });
+                rows.pop();
+                rows.forEach( (row, id) => {
+                    row.id = id;
+                    row.last_updated = new Date(row.last_updated);
+                });
+
+                const loading = false;
+                this.setState({ rows, loading });
             });
     }
 
     render () {
-        const { rows } = this.state;
-        return rows.length ? (
-            <DataGrid
-                rows={rows}
-                columns={columns}
-                autoHeight
-            />
-        ) : (
-            <span>Loading rows...</span>
-        );
+        const { rows, loading } = this.state;
+        const data = { rows, columns, loading, autoHeight: true,
+            pageSize: 10 };
+        return <DataGrid {...data} />;
     }
 }
 

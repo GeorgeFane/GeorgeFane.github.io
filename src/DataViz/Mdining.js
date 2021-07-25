@@ -31,13 +31,19 @@ const columns = [
 class Map extends React.Component {
     constructor () {
         super();
-        this.state = { rows: [] };
+        this.state = {
+            rows: [],
+            loading: true,
+        };
     }
 
-    async componentDidMount() {
-        const resp = await axios.get(url);
-        const rows = resp.data.data.map( (row, id) => ({ id, ...row }) );
-        this.setState({ rows });
+    componentDidMount() {
+        axios.get(url)
+            .then(resp => {
+                const rows = resp.data.data.map( (row, id) => ({ id, ...row }) );
+                const loading = false;
+                this.setState({ rows, loading });
+            })
         
         // axios.get('https://raw.githubusercontent.com/GeorgeFane/MDining-Scraper/master/scraped.txt')
         //     .then(resp => {
@@ -50,12 +56,9 @@ class Map extends React.Component {
     }
 
     render () {
-        const { rows } = this.state;
-        return rows.length ? <DataGrid
-            rows={rows}
-            columns={columns}
-            autoHeight
-        /> : <span>Loading rows...</span>;
+        const { rows, loading } = this.state;
+        const data = { rows, columns, loading, autoHeight: true }
+        return <DataGrid {...data} />;
     }
 }
 
