@@ -1,2 +1,0 @@
-(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[8],{886:function(e,p,s){"use strict";s.r(p),p.default=s.p+"static/media/Homeland.eb6abe6f.md"}}]);
-//# sourceMappingURL=8.c2854df4.chunk.js.map

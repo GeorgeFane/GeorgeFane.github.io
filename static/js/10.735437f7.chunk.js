@@ -1,0 +1,2 @@
+(this.webpackJsonpgeorgefane=this.webpackJsonpgeorgefane||[]).push([[10],{1132:function(e,s,t){"use strict";t.r(s),s.default=t.p+"static/media/Ingrid Goes West.9151cf5b.md"}}]);
+//# sourceMappingURL=10.735437f7.chunk.js.map

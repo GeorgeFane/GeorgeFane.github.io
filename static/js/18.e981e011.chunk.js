@@ -1,0 +1,2 @@
+(this.webpackJsonpgeorgefane=this.webpackJsonpgeorgefane||[]).push([[18],{1140:function(e,a,s){"use strict";s.r(a),a.default=s.p+"static/media/WandaVision.d1353154.md"}}]);
+//# sourceMappingURL=18.e981e011.chunk.js.map

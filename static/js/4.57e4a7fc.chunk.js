@@ -1,0 +1,2 @@
+(this.webpackJsonpgeorgefane=this.webpackJsonpgeorgefane||[]).push([[4],{1126:function(e,a,s){"use strict";s.r(a),a.default=s.p+"static/media/Breakfast at Tiffany's.d2079652.md"}}]);
+//# sourceMappingURL=4.57e4a7fc.chunk.js.map

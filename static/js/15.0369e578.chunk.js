@@ -1,0 +1,2 @@
+(this.webpackJsonpgeorgefane=this.webpackJsonpgeorgefane||[]).push([[15],{1137:function(e,s,t){"use strict";t.r(s),s.default=t.p+"static/media/The Kominsky Method.b0c831d4.md"}}]);
+//# sourceMappingURL=15.0369e578.chunk.js.map

@@ -1,2 +1,0 @@
-(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[14],{892:function(p,s,e){"use strict";e.r(s),s.default=e.p+"static/media/Tenet.913b5a96.md"}}]);
-//# sourceMappingURL=14.607c92c8.chunk.js.map

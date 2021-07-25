@@ -1,0 +1,2 @@
+(this.webpackJsonpgeorgefane=this.webpackJsonpgeorgefane||[]).push([[8],{1130:function(e,a,s){"use strict";s.r(a),a.default=s.p+"static/media/Homeland.6423a148.md"}}]);
+//# sourceMappingURL=8.f71c3711.chunk.js.map

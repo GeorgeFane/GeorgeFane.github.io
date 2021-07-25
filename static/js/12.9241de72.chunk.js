@@ -1,0 +1,2 @@
+(this.webpackJsonpgeorgefane=this.webpackJsonpgeorgefane||[]).push([[12],{1134:function(e,a,s){"use strict";s.r(a),a.default=s.p+"static/media/Roman Holiday.4825583a.md"}}]);
+//# sourceMappingURL=12.9241de72.chunk.js.map

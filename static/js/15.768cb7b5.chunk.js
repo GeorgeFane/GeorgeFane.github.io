@@ -1,2 +1,0 @@
-(this["webpackJsonpsimple-reactjs-app"]=this["webpackJsonpsimple-reactjs-app"]||[]).push([[15],{893:function(s,p,e){"use strict";e.r(p),p.default=e.p+"static/media/The Kominsky Method.92662a3d.md"}}]);
-//# sourceMappingURL=15.768cb7b5.chunk.js.map
