@@ -4,10 +4,12 @@ import { Tooltip, Typography } from '@material-ui/core';
 
 import axios from 'axios';
 
+const url = 'https://us-central1-georgefane.cloudfunctions.net/mdining'
+
 const fields = 'id Hall Meal Time Foods'.split(' ');
 const columns = [
     {
-        field: 'Foods',
+        field: 'Courses',
         renderCell: params => <Tooltip
             placement='right'
             title={
@@ -19,9 +21,11 @@ const columns = [
             <div>{params.value}</div>
         </Tooltip>
     },
+    { field: 'isOpen', type: 'boolean' },
     { field: 'Hall' },
     { field: 'Meal' },
-    { field: 'Time' },
+    { field: 'Open' },
+    { field: 'Close' },
 ];
 
 class Map extends React.Component {
@@ -30,17 +34,19 @@ class Map extends React.Component {
         this.state = { rows: [] };
     }
 
-    componentDidMount() {
-        axios.get('https://raw.githubusercontent.com/GeorgeFane/MDining-Scraper/master/scraped.txt')
-            .then(resp => {
-                const rows = resp.data.map( (row, id) => {
-                    row.id = id;
-                    row.Foods = row.Foods.map(food => food.trim())
-                        .join(', ');
-                    return row;
-                });
-                this.setState({ rows });
-            });
+    async componentDidMount() {
+        const resp = await axios.get(url);
+        const rows = resp.data.data.map( (row, id) => ({ id, ...row }) );
+        this.setState({ rows });
+        
+        // axios.get('https://raw.githubusercontent.com/GeorgeFane/MDining-Scraper/master/scraped.txt')
+        //     .then(resp => {
+        //         const rows = resp.data.map( (row, id) => {
+        //             row.id = id;
+        //             return row;
+        //         });
+        //         this.setState({ rows });
+        //     });
     }
 
     render () {

@@ -80,33 +80,34 @@ const links = [
 ]
 
 function Home() {
-        return (
-                <Grid container spacing={3}>
-                        <Grid item xs>
-                        </Grid>
+    return (
+        <Grid container spacing={3}>
+            <Grid item xs>
+            </Grid>
 
-                        <Grid item xs>
-                                <Paper>
-                                        <Typography variant='h6'>
-                                                Hi! I'm George Fane, a sophomore at the University of Michigan studying Business Adminstration and Computer Science.
-                                        </Typography>
-                                </Paper>
-                        </Grid>
-                        
-                        <ButtonGroup 
-                                variant="text" orientation='vertical' size='large'
-                        >
-                                {links.map(link => <Button
-                                        href={link.href}
-                                        target='_blank'
-                                        startIcon={link.icon}
-                                >
-                                        {link.text}
-                                </Button>
-                                )}
-                        </ButtonGroup>
-                </Grid>
-        );
+            <Grid item xs>
+                <Paper>
+                    <Typography variant='h6'>
+                        Hi! I'm George Fane, a sophomore at the University of Michigan studying Business Adminstration and Computer Science.
+                    </Typography>
+                </Paper>
+            </Grid>
+            
+            <ButtonGroup 
+                variant="text" orientation='vertical' size='large'
+            >
+                {links.map(link => (
+                    <Button
+                        href={link.href}
+                        target='_blank'
+                        startIcon={link.icon}
+                    >
+                        {link.text}
+                    </Button>
+                ))}
+            </ButtonGroup>
+        </Grid>
+    );
 }
 
 export default CenteredGrid;

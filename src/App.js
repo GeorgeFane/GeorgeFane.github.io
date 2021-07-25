@@ -13,7 +13,7 @@ import ShowReviews from './ShowReviews/App';
 
 const tabs = [
     {
-        icon: <Home />, label: 'Me', content: <Me />
+        icon: <Home />, label: 'Hello!', content: <Me />
     },
     {
         icon: <TableChart />, label: 'ShowReviews', content: <ShowReviews />,
