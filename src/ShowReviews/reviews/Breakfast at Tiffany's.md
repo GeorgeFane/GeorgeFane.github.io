@@ -1,6 +1,0 @@
-# Breakfast at Tiffany's (1961)
-#### Written 17 May 2021, watched 16 May
-
-Pretty good. Not one of my favorites, but quite enjoyable. I chose this film because I've been listening to Audrey Hepburn's Moon River on repeat over the last several days. No joke, I walked to Angell Elementary to shoot hoops for an hour and I looped this two-minute song alone. I really liked Frank Ocean's Moon River maybe a year back and vaguely knew then that it was a cover, but didn't enjoy the original until now. What a delight. A simple background of guitar, maybe an arpeggio if I'm remembering my music terminology correctly, with strings coming in later, if I recall. Her voice is breathy, but that adds emotion to the singing.
-
-Anyways, the movie was nice. The first scene, while credits show up, immediately grabs your attention, as does her singing later on in the film. The party scene had some nice goofy humor. The actor for Paul Varjak didn't seem to have excellent chemistry with Hepburn, and the character just does stuff for other people like a pushover. There's the man-grabs-the-woman-by-the-shoulder-and-shakes-scene in the library, though.
