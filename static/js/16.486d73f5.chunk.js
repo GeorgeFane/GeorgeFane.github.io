@@ -1,2 +1,0 @@
-(this.webpackJsonpgeorgefane=this.webpackJsonpgeorgefane||[]).push([[16],{1138:function(e,a,n){"use strict";n.r(a),a.default=n.p+"static/media/The Mandalorian.0265d3d1.md"}}]);
-//# sourceMappingURL=16.486d73f5.chunk.js.map

@@ -1,2 +1,0 @@
-(this.webpackJsonpgeorgefane=this.webpackJsonpgeorgefane||[]).push([[5],{1127:function(e,a,s){"use strict";s.r(a),a.default=s.p+"static/media/Dead To Me.72c8b589.md"}}]);
-//# sourceMappingURL=5.5164e8ab.chunk.js.map

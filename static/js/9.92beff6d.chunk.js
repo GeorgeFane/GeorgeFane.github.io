@@ -1,2 +1,0 @@
-(this.webpackJsonpgeorgefane=this.webpackJsonpgeorgefane||[]).push([[9],{1131:function(e,s,a){"use strict";a.r(s),s.default=a.p+"static/media/House of Cards.bf0dc63c.md"}}]);
-//# sourceMappingURL=9.92beff6d.chunk.js.map

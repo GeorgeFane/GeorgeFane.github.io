@@ -1,6 +1,0 @@
-# Skeleton Twins
-#### 17 Feb 2021
-
-Best movie I've watched recently. I watched it twice within a few days. I chose to watch it because I liked Bill Hader in Barry and Kristen Wiig in SNL (because of this movie, I watched two other Wiig films: Bridesmaids and Welcome to Me, and I'm going to watch Barb and Star).
-
-Just a great movie all the way through, mixing comedy and drama like Fleabag. Like in Barry, I'm impressed how these SNL talents shine in serious roles. My favorite moments include the famous lip-sync scene (watched it in YouTube several times), the twins' fight during Halloween, and their fight when Lance discovers the pills. Hader admirably puts such venom in his voice during the last scene when he says, "Maybe I should try fucking all my problems away." Another part that I liked, a really short scene, was Wiig's character sinking underwater in her bathtub when Lance asks her to add something to the shopping list. Really captures her dejectedness about her life in a straightforward way.

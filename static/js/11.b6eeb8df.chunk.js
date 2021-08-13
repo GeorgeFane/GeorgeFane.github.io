@@ -1,2 +1,0 @@
-(this.webpackJsonpgeorgefane=this.webpackJsonpgeorgefane||[]).push([[11],{1133:function(e,a,s){"use strict";s.r(a),a.default=s.p+"static/media/Mad Men.fe7a2781.md"}}]);
-//# sourceMappingURL=11.b6eeb8df.chunk.js.map

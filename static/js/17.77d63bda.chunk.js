@@ -1,2 +1,0 @@
-(this.webpackJsonpgeorgefane=this.webpackJsonpgeorgefane||[]).push([[17],{1139:function(e,s,a){"use strict";a.r(s),s.default=a.p+"static/media/Twin Peaks.0eec23c2.md"}}]);
-//# sourceMappingURL=17.77d63bda.chunk.js.map

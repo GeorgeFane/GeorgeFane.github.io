@@ -1,2 +1,0 @@
-(this.webpackJsonpgeorgefane=this.webpackJsonpgeorgefane||[]).push([[3],{1125:function(e,t,a){"use strict";a.r(t),t.default=a.p+"static/media/Better Call Saul.c9015b82.md"}}]);
-//# sourceMappingURL=3.e93f5f0f.chunk.js.map

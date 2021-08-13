@@ -1,2 +1,0 @@
-(this.webpackJsonpgeorgefane=this.webpackJsonpgeorgefane||[]).push([[6],{1128:function(e,t,a){"use strict";a.r(t),t.default=a.p+"static/media/Death of Stalin.e8d41fd2.md"}}]);
-//# sourceMappingURL=6.e086035e.chunk.js.map

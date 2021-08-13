@@ -1,2 +1,0 @@
-(this.webpackJsonpgeorgefane=this.webpackJsonpgeorgefane||[]).push([[13],{1135:function(e,s,t){"use strict";t.r(s),s.default=t.p+"static/media/Skeleton Twins.16915d6e.md"}}]);
-//# sourceMappingURL=13.c8372e1f.chunk.js.map
