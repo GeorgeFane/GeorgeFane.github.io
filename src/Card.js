@@ -65,7 +65,7 @@ export default function MediaControlCard(props) {
                             {title}
                         </Link>
                     </Typography>
-                    <Typography variant="subtitle1" color="textSecondary">
+                    <Typography variant="subtitle1">
                         {desc}
                     </Typography>
                 </CardContent>

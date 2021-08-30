@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const items = [
+const projects = [
     {
         title: 'MDining Scraper',
         desc: 'Aggregates all Michigan Dining Hall menus',
@@ -34,16 +34,47 @@ const items = [
         href: 'https://georgefane.github.io/cryptocharity/',
         image: 'https://georgefane.github.io/cryptocharity/static/media/logo.bd51f56a.png',
     },
-]
+];
 
-function CenteredGrid() {
-    const classes = useStyles();
+const upcoming = [
+    {
+        title: 'Extend Protocol',
+        desc: 'Create wrapped tokens with one click. Use your favorite token on your favorite network. In Celo Camp.',
+        href: 'https://wrapped-token.github.io/',
+        image: 'https://raw.githubusercontent.com/wrapped-token/wrapped-token.github.io/gh-pages/images/jankLogo.svg',
+    },
+    {
+        title: 'Counterpoint Checker',
+        desc: 'Autograde your counterpoint and cantus firmus. Working to gain approval as official university tool.',
+        // href: 'https://georgefane.github.io/ratingsmap/',
+        image: 'https://www.researchgate.net/profile/Morwaread-Farbood/publication/228846096/figure/fig1/AS:300847780122630@1448739108541/Counterpoint-examples-for-a-given-cantus-firmus-Ex.png',
+    },
+];
 
-    const cards = items.map(item => (
-        <Grid item xs={3}>
+function Cards(props) {
+    const cards = props.items.map(item => (
+        <Grid item>
             <Card {...item} />
         </Grid>
     ));
+
+    return (
+        <div>
+            <br />
+
+            <Typography variant='h4'>
+                {props.title}
+            </Typography>
+
+            <Grid container spacing={3}>
+                {cards}
+            </Grid>
+        </div>
+    );
+}
+
+function CenteredGrid() {
+    const classes = useStyles();
 
     return (
         <div>
@@ -88,16 +119,16 @@ function CenteredGrid() {
                     </Grid>
 
                 </Grid>
-            
-                <br />
-
-                <Typography variant='h4'>
-                    Projects
-                </Typography>
-
-                <Grid container spacing={3}>
-                    {cards}
-                </Grid>
+                
+                <Cards
+                    title='Projects'
+                    items={projects}
+                />
+                
+                <Cards
+                    title='Upcoming'
+                    items={upcoming}
+                />
 
             </div>
         </div>
